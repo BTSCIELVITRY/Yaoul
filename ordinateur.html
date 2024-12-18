@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinateur</title>
+    <link rel="stylesheet" href="css ordinateur.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="menu-1">
+                    <a href="index.html">
+                        <img src="home.png" alt="Home" class="menu-icon">
+                    </a>
+                </li>
+                <li class="dropdown menu-2">
+                    <a href="#" class="dropbtn">Parties</a>
+                    <div class="dropdown-content">
+                        <a href="ordinateur.html">Ordinateur</a>
+                        <a href="metaux.html">Métaux</a>
+                        <a href="sommaire.html">Sommaire</a>
+                    </div>
+                </li>
+                <li class="menu-4"><a href="tpde.html">Tableau périodique</a></li>
+                <li class="menu-3"><a href="contact.html">Contact</a></li>
+                <li class="menu-5"><a href="liens prof.html">Lien Prof</a></li>
+                <li class="dropdown menu-2">
+                    <a href="#" class="dropbtn">Projets</a>
+                    <div class="dropdown-content">
+                        <a href="musée.html">
+                            Musée en travaux...
+                            <img src="bankai de glace.gif" alt="ice" >
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <img src="images ordi/ordi-1.jpg" alt="Image d'un ordinateur" class="main-image">
+            <button id="show-more">+</button>
+            <div class="extra-images">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images ordi/materiaux-pc-01.jpg" alt="Image 1" class="zoomable">
+                            <p>Dans un ordinateur fixe <br>
+                                La première étude sur laquelle nous nous arrêtons émane de l’UNEP <br>
+                                (United Nations Environment Programme) en 2013 et présente les principaux matériaux <br>
+                                utilisés dans un ordinateur fixe. Ce rapport passe en revue 36 matériaux parmi lesquels <br>
+                                prédominent la silice employée dans les puces électroniques, les plastiques <br>
+                                (claviers, écrans, souris, …), le fer (aimants NdFeB des disques durs, écrans LCD et <br>
+                                structure des unités centrales), le cuivre (câbles, puces, circuits imprimés), l’aluminium <br>
+                                (structure, circuits imprimés, écrans CRT), le plomb (circuits imprimés, écrans CRT) et le zinc <br>
+                                (batteries, circuits imprimés, écrans CRT). L’étain quand à lui, fait partie des métaux <br>
+                                (avec l’argent et le cuivre), candidats à remplacer le plomb pour les soudures suite à la <br>
+                                directive RoHS. Les matériaux présents en très petites quantités ne représentent que 0,19% <br>
+                                du poids total de l’ordinateur, mais, comme nous allons le voir, leur liste est importante.</p>
+                        </td>
+                        <tr></tr>
+                        <td>
+                            <img src="images ordi/materiaux-pc-02.jpg" alt="Image 2" class="zoomable">
+                            <p>Les matériaux employés dans des quantités plus réduites ont été rassemblés dans cette seconde figure. <br>
+                                Il est frappant de constater que le nombre des matériaux dans cette catégorie (27) <br>
+                                est trois fois supérieur à celui des matériaux présents en quantité importante (9). <br>
+                                Le rapport précise que, parmi les matériaux de base nécessaires à la fabrication d’un tel équipement <br>
+                                (métaux, combustibles, plastiques,…), l’impact environnemental le plus important concerne les métaux <br>
+                                précieux (palladium, or et argent) qui contribuent à presque 50% de l’impact global des matériaux.<br>
+                               
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                            <p>
+                                Dans un ordinateur portable <br>
+                                Une étude présente les principaux matériaux employés dans la fabrication d’ordinateurs portables. <br>
+                                On note 17 matériaux dans cette étude (cf. tableau ci-dessous), parmi <br>
+                                lesquels une très forte proportion d’éléments de la famille des terres rares (lanthanides) dont <br>
+                                l’accès est jugé particulièrement critique par les instances internationales. <br>
+                                (1) CCFL : Cold Cathode Fluorescent Lamp ou tube fluorescent <br>
+                                (2) LCD : Light-Emitting Diode ou diode électroluminescente <br>
+                                Ces quantités, exprimées ici en mg, peuvent paraitre faibles. Pourtant, le nombre d’équipements <br>
+                                électroniques fabriqués chaque année consomme une quantité non négligeable de la production mondiale <br>
+                                pour certains de ces matériaux. Par exemple, plus de 66% de la production mondiale de tantale (Ta) <br>
+                                est consacrée aux TIC, 50% pour l’indium (In), 48% pour le gallium (Ga), 44% pour l’étain (Sn), <br>
+                                42% pour le cuivre (Cu), 21% pour l’argent (Ag) et 20% pour le lithium, pour ne citer que quelques-uns <br>
+                            </p>
+                            <img src="images ordi/table.png" alt="table">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <script>
+            const button = document.getElementById('show-more');
+            const extraImages = document.querySelector('.extra-images');
+    
+            button.addEventListener('click', () => {
+                extraImages.classList.toggle('visible');
+            });
+        </script>
+    
+</body>
+</html>
