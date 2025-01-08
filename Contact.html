@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact.css">
+    <title>Formulaire de Contact</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="menu-1">
+                    <a href="index.html">
+                        <img src="home.png" alt="Home" class="menu-icon">
+                    </a>
+                </li>
+                <li class="dropdown menu-2">
+                    <a href="#" class="dropbtn">Parties</a>
+                    <div class="dropdown-content">
+                        <a href="ordinateur.html">Ordinateur</a>
+                        <a href="metaux.html">Métaux</a>
+                        <a href="sommaire.html">Sommaire</a>
+                    </div>
+                </li>
+                <li class="menu-4"><a href="tpde.html">Tableau périodique</a></li>
+                <li class="menu-3"><a href="contact.html">Contact</a></li>
+                <li class="menu-5"><a href="liens prof.html">Lien Prof</a></li>
+                <li class="dropdown menu-2">
+                    <a href="#" class="dropbtn">Projets</a>
+                    <div class="dropdown-content">
+                        <a href="musée.html">
+                            Musée en travaux...
+                            <img src="bankai de glace.gif" alt="ice" width="100%" heignt="auto">
+                        </a>
+                        <a href="cv.html">
+                            <img src="DELETTRE Yaël.jpg" alt="cv" width="50%" height="auto">
+                            CV
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <form action="mailto:yael.delettre796@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Nom :</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">E-mail :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

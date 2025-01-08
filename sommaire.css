@@ -23,7 +23,7 @@
     min-height: 100vh; /* Assure que la page prend toujours au moins la hauteur de l'écran */
     padding-bottom: 30px;
     background-size: 1900px 830px;
-    background-color: #1f2123;
+    background-color: #072b4f;
   }
   
   header {
@@ -140,3 +140,68 @@
     margin-top: 4%;
     margin-left: 3%;
   }
+
+.borders
+{
+  margin: 20px 20px 20px 20px;
+}
+
+/* Conteneur principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Bloc de gauche */
+.left-block {
+  width: 45%;
+  background-color: #27542e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Bloc de droite */
+.right-block {
+  width: 45%;
+  background-color: #27542e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  /* Container du carousel */
+  .carousel {
+    width: 500px;
+    height: auto; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Piste contenant les images */
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+/* Images */
+.carousel-track img {
+  width: 500px;
+  height: 90%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Animation continue */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-2500px);
+  }
+
+  
+
