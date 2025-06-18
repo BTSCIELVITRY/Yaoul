@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Affichage Arduino</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+    #data { font-size: 24px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Texte affiché par l’Arduino</h1>
+  <div id="data">Chargement...</div>
+
+  <script>
+    const arduinoIP = '192.168.226.250'; // Remplace par l’IP de ton Arduino
+
+    async function fetchText() {
+      try {
+        const response = await fetch(`http://${arduinoIP}/`);
+        const text = await response.text();
+        document.getElementById('data').textContent = text;
+      } catch (error) {
+        document.getElementById('data').textContent = 'Erreur : ' + error;
+      }
+    }
+
+    setInterval(fetchText, 2000);
+    fetchText();
+  </script>
+</body>
+</html>
