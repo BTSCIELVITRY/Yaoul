@@ -2,7 +2,7 @@
 
 const char* ssid = "Senkuuu";
 const char* password = "Dysprosium";
-const char* serverUrl = "file:///C:/Users/yaeld/Desktop/Stage/Arduino/Site%20arduino/Page%20accueil.html";
+const char* serverUrl = "https://btscielvitry.github.io/Yaoul/index.html";
 
 void setup() {
   WiFi.begin(ssid, password);
