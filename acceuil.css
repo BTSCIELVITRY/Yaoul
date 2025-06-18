@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .zoomable {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .zoomable:hover {
+    transform: scale(2);
+  }
+  
+  body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(166, 209, 221);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que la page prend toujours au moins la hauteur de l'écran */
+    padding-bottom: 30px;
+    background-size: 1900px 830px;
+    background-color: #252527;
+  }
+  
+  header {
+    background: #05695c;
+    padding: 5px 0;
+  }
+  
+  
+  .menu {
+    padding: 5px;
+    text-align: center;
+    background: #320cb0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .menu a {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff; /* Couleur du texte des liens du menu en blanc */
+    display: block;
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.3s; /* Transition pour la couleur du texte */
+  }
+  
+  /* Styles pour les animations du menu */
+  .menu a::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #1e91e9;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+  }
+  
+  .menu a:hover::before {
+    
+    transform: scaleX(1);
+  }
+  
+  /* Styles pour le menu déroulant */
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropbtn {
+    cursor: pointer;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4A148C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #6A1B9A;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .menu-icon {
+    width: 30px;
+    height: auto;
+  }
+  
+  main {
+    flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 20px; /* Espace entre le flux Twitter et le bas de la page */
+  }
+
+  .left
+  {
+    margin-top: 4%;
+    margin-left: 3%;
+    font-size: 80%;
+  }
+
+  .liste
+  {
+    margin-left: 2%;
+  }
+
+  .ul
+  {
+    margin-left: 2%;
+    font-size: 15px;
+  }
+
+  .sous-ligne
+  {
+    font-size: large;
+    text-decoration: underline;
+    font-style: italic;
+  }

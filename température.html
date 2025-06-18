@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="acceuil.css" rel="stylesheet">
+    <link href="temp.cpp" rel="stylesheet">
+    <link href="serv.php" rel="stylesheet">
+    <title>Température</title>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="menu-1">
+                    <a href="Page accueil.html">
+                        <img src="home.png" alt="Home" class="menu-icon">
+                    </a>
+                </li>
+                <li class="dropdown menu-2">
+                    <a href="#" class="dropbtn">Parties Arduino</a>
+                    <div class="dropdown-content">
+                        <a href="température.html">Température</a>
+                        <a href="humidité.html">Humidité</a>
+                        <a href="métaux.html">Métaux</a>
+                    </div>
+                </li>
+                <li class="menu-4"><a href="tpde.html">Tableau périodique</a></li>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+<br><br>
+
+<div class="liste">
+<p>
+
+    <a name="liste"> <h3>Données des capteurs de température Arduino</h3> </a>
+<br>
+  
+
+
+
+  <pre id="donnees"></pre>
+
+  <script>
+    setInterval(() => {
+      fetch('donnees.txt')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('donnees').textContent = data;
+        });
+    }, 5000);
+  </script>
+
+
+</body>
+</html>
