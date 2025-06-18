@@ -2,7 +2,7 @@
 
 const char* ssid = "Senkuuu";
 const char* password = "Dysprosium";
-const char* serverUrl = "https://btscielvitry.github.io/Yaoul/index.html";
+const char* serverUrl = "https://btscielvitry.github.io/Yaoul/temp%C3%A9rature.html";
 
 void setup() {
   WiFi.begin(ssid, password);
